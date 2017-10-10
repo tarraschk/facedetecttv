@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div class="container_video">
+  <p>
+    <strong>Url:</strong>
+    <%= @video.url %>
+  </p>
+
+  <p>
+    <strong>Chaine:</strong>
+    <%= @video.chaine.name %>
+  </p>
+
+  <p>
+    <strong>Images:</strong>
+    <%= @images.count %> récupérée(s)
+  </p>
+
+  <%= link_to 'Edit', edit_video_path(@video) %> |
+  <%= link_to 'Extraire les images', video_extract_images_path(@video) %> |
+  <%= link_to 'Télécharger les images', "/export/#{@video.id.to_s}.zip" %> |
+  <%= link_to 'Back', videos_path %>
+</div>

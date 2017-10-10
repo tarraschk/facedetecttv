@@ -1,0 +1,1 @@
+json.array! @chaines, partial: 'chaines/chaine', as: :chaine

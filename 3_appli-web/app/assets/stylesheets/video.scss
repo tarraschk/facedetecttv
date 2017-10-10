@@ -1,0 +1,51 @@
+.container_video {
+  width: 85%;
+  padding: 50px 0 50px 0;
+  margin: auto;
+}
+
+.container_video h1 {
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.field {
+  margin: 20px 0 20px 0;
+}
+
+.container_video label {
+  font-size: 14px;
+  color: #333333;
+  display: inline-block;
+}
+
+.container_video input[type=text] {
+  height: 40px;
+  width: 60%;
+  border: 2px solid #C2C1C2;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #424242;
+}
+
+.container_video select {
+  height: 40px;
+  width: 60%;
+  border: 2px solid #C2C1C2;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #424242;
+}
+.container_video input[type=submit] {
+  background-color: #116BCE;
+  border-radius: 8px;
+  height: 50px;
+  width: 210px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: -0.61px;
+  margin: 40px 0 40px 0;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,83 @@
+    <header>
+      <div id="container-header">
+        <%= image_tag("logo.jpg", alt: "Observatoire Politique") %>
+        <a href="#second_screen">En savoir plus</a>
+      </div>
+    </header>
+    <div id="container">
+      <span id="layer"></span>
+      <div id="slideshow">
+          <%= image_tag("background_img1.jpg") %>
+          <%= image_tag("background_img2.jpg") %>
+          <%= image_tag("background_img3.jpg") %>
+          <%= image_tag("background_img4.jpg") %>
+          <%= image_tag("background_img5.jpg") %>
+      </div>
+      <section id="first_screen">
+        <h1>Retrouvez toutes les données des interventions politiques à la télévision</h1>
+        <p>Nous utilisons un algorithme d’intelligence artificielle pour analyser l’ensemble
+          des interventions des candidats à l’élection présidentielle de 2017 sur les chaînes
+          françaises de télévision. L’Observatoire Politique est capable d’obtenir le temps
+          de parole ainsi que l’ensemble des mots clés utilisés par chaque candidat et leur
+          évolution dans le temps.</p>
+          <!-- Begin MailChimp Signup Form 1 -->
+          <div id="mc_embed_signup">
+          <form action="//observatoirepolitique.us14.list-manage.com/subscribe/post?u=b1a698e77efacc0911da9ba34&amp;id=c48764c778" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+              	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b1a698e77efacc0911da9ba34_c48764c778" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Accéder aux données" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', {
+    	  hitType: 'event',
+    	  eventCategory: 'App_email',
+    	  eventAction: 'subscribe_email',
+    	  eventLabel: 'Click top CTA'
+    	});"></div>
+              </div>
+          </form>
+          </div>
+          <!--End mc_embed_signup-->
+          <div id="social_media">
+            <a href="https://www.facebook.com/observatoirepol/" alt="Facebook" target="_blank"><%= image_tag("facebook.png", alt: "Twitter") %></a>
+            <a href="https://twitter.com/obserpol" alt="Twitter" target="_blank"><%= image_tag("twitter.png", alt: "Twitter") %></a>
+            <!-- <a href="#" alt="Medium"><%= image_tag("medium.png", alt: "Medium") %></a> -->
+          </div>
+      </section>
+    </div>
+    <section id="second_screen">
+      <h2>À propos</h2>
+      <p>L’Observatoire Politique est né de la volonté de <a href="https://www.linkedin.com/in/maximealayeddine" target="_blank">Maxime Alay-Eddine</a>, <a href="https://www.linkedin.com/in/anis-marrakchi-81a664136" target="_blank">Anis Marrakchi</a>
+         et <a href="https://www.linkedin.com/in/nicolaslrx" target="_blank">Nicolas Le Roux</a> d’offrir une alternative aux instituts de sondage afin d’analyser
+         la vie politique durant les élections présidentielles de 2017. Nos données sont entièrement
+         transparentes et objectives, étant le résultat d’un algorithme. Elles ont pour but d’aider à
+         comprendre les évolutions de la vie politique et de mieux comprendre les propositions des candidats.
+      </p>
+      <h2>Comment ça marche ?</h2>
+      <p>Nous analysons les chaînes de télévision françaises afin de trouver automatiquement les interventions des candidats.
+        Notre système prend des captures d’écran des émissions toutes les demi-secondes. Tous les visages détectés sont ensuite
+        analysés par notre algorithme de reconnaissance faciale afin de vérifier si un candidat se trouve sur l’émission en question.
+        Grâce à une technologie speach-to-text, nous pouvons extraire les mots clés utilisés dans les discours des politiques et voir
+        l’évolution de leur utilisation au fil de la campagne.
+      </p>
+      <h2>Pour qui ?</h2>
+      <p>Si vous êtes journaliste, blogger ou simplement curieux, vous pouvez obtenir un accès à nos données en nous transmettant votre email.
+        Toute utilisation publique de nos données doit mentionner l’Observatoire Politique en tant que source.
+      </p>
+      <!-- Begin MailChimp Signup Form 2 -->
+      <div id="mc_embed_signup2">
+      <form action="//observatoirepolitique.us14.list-manage.com/subscribe/post?u=b1a698e77efacc0911da9ba34&amp;id=c48764c778" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse email" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b1a698e77efacc0911da9ba34_c48764c778" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Accéder aux données" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="ga('send', {
+    hitType: 'event',
+    eventCategory: 'App_email',
+    eventAction: 'subscribe_email',
+    eventLabel: 'Click bottom CTA'
+  });"></div>
+          </div>
+      </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </section>

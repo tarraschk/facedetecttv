@@ -1,0 +1,18 @@
+    <div id="container">
+      <section id="first_screen" style="margin-bottom: 25%;">
+        <%= form_tag "/form", method: "post" do %>
+          <label>Entrez une url : </label>
+          <input type="text" name="url" /><br />
+          <label>Selectionnez une chaîne de télévision : </label>
+          <select name="name">
+            <option value="france1">France 1</option>
+            <option value="france2">France 2</option>
+            <option value="france3">France 3</option>
+            <option value="france4">France 4</option>
+            <option value="france5">France 5</option>
+            <option value="franceo">France Ô</option>
+          </select><br />
+          <input type="submit" value="Launch script" />
+        <% end %>
+      </section>
+    </div>

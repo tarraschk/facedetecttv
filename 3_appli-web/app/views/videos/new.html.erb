@@ -1,0 +1,17 @@
+<div class="container_video">
+  <h1>Ajouter une vidéo</h1>
+
+  <%= form_for(@video) do |f| %>
+      <div class="field">
+        <%= f.label :url %><br />
+        <%= f.text_field :url %>
+      </div>
+      <div class="field">
+        <%= f.label :chaine_id %><br />
+        <%= f.collection_select :chaine_id, Chaine.all, :id, :name, include_blank: false %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Envoyer" %>
+      </div>
+  <% end %>
+</div>

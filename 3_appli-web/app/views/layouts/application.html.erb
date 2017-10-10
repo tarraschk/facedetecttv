@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Observatoire Politique</title>
+    <%= favicon_link_tag 'favicon.png' %>
+    <meta name="description" itemprop="description" content="Nous analysons les interventions des politiques sur la télévision française dans le but d'obtenir des données pour comprendre la vie politique française."/>
+
+    <!-- Twitter Card data -->
+  	<meta name="twitter:card" content="Observatoire Politique">
+  	<meta name="twitter:site" content="http://www.observatoirepolitique.com">
+  	<meta name="twitter:title" content="L'Observatoire Politique analyse les interventions télévisées des candidats aux élections présidentielles de 2017">
+  	<meta name="twitter:description" content="Nous analysons les interventions des politiques sur la télévision française dans le but d'obtenir des données pour comprendre la vie politique française.">
+  	<meta	name="twitter:image" content="http://www.observatoirepolitique.com/app/assets/images/description.png">
+
+  	<!-- Open Graph data -->
+  	<meta property="og:title" content="L'Observatoire Politique analyse les interventions télévisées des candidats aux élections présidentielles de 2017" />
+  	<meta property="og:type" content="website" />
+  	<meta property="og:url" content="http://www.observatoirepolitique.com" />
+  	<meta property="og:image" content="http://www.observatoirepolitique.com/app/assets/images/description.png" />
+  	<meta property="og:image:width" content="1024" />
+  	<meta property="og:image:height" content="512" />
+  	<meta property="og:description" content="Nous analysons les interventions des politiques sur la télévision française dans le but d'obtenir des données pour comprendre la vie politique française." />
+  	<meta property="og:site_name" content="Observatoire Politique" />
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <header>
+      <div id="container-header">
+        <%= image_tag("logo.jpg", alt: "Observatoire Politique") %>
+        <a href="#second_screen">En savoir plus</a>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <p>Observatoire Politique © 2017 - <a href="mailto:contact@observatoirepolitique.com">contact</a></p>
+    </footer>
+  </body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90119807-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</html>

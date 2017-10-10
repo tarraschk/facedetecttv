@@ -1,0 +1,2 @@
+module ChainesHelper
+end
